@@ -242,7 +242,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
     public class Exceed7Controller : Controller
     {
         private NativeAudioPointer pointer;
-        private NativeAudioController controller;
+        private NativeSource controller;
         private float length;
         private float volume = 1f;
         private bool isPlaying = false;
@@ -260,7 +260,7 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
             set
             {
                 volume = value;
-                controller?.SetVolume(volume);
+                controller.SetVolume(volume);
             }
         }
 
@@ -274,11 +274,13 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
 
         public override void Play(AudioTrackIndex trackIndex = AudioTrackIndex.RoundRobin, bool ignoreDsp = false)
         {
-            controller = pointer.Play(new NativeAudio.PlayOptions
+            /*controller = pointer.Play(new NativeSource.PlayOptions
             {
                 audioPlayerIndex = Parent.GetAvailableIndex(trackIndex)
-            });
+            });*/
+            controller = NativeAudio.GetNativeSource(Parent.GetAvailableIndex(trackIndex));
             controller.SetVolume(volume);
+            controller.Play(pointer);
             isPlaying = true;
             Debug.Log("Controller volume set to " + volume);
         }
@@ -291,19 +293,19 @@ public class AudioManager : SingletonMonoBehavior<AudioManager>
         public override void Pause()
         {
             isPlaying = false;
-            controller.TrackPause();
+            controller.Pause();
         }
 
         public override void Resume()
         {
             isPlaying = true;
-            controller.TrackResume();
+            controller.Resume();
         }
 
         public override void Stop()
         {
             isPlaying = false;
-            controller?.Stop();
+            controller.Stop();
         }
 
         public override async void Unload()
