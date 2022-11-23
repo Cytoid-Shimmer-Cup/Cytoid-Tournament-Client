@@ -25,6 +25,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+.vsconfig
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -123,3 +124,23 @@ TPS_cache/
 /Assets/InkLibrary.asset.meta
 /Assets/InkSettings.asset
 /Assets/InkSettings.asset.meta
+Assets/Awesome Charts.meta
+Assets/Awesome Charts/
+Assets/Camera Filter Pack.meta
+Assets/Camera Filter Pack/
+Assets/ExternalDependencyManager.meta
+Assets/ExternalDependencyManager/
+Assets/Feel.meta
+Assets/Feel/
+Assets/GooglePlayPlugins.meta
+Assets/GooglePlayPlugins/
+Assets/Ink.meta
+Assets/Ink/
+Assets/Le Tai's Asset.meta
+Assets/Le Tai's Asset/
+Assets/NativeAudio.meta
+Assets/NativeAudio/
+Assets/PlayServicesResolver.meta
+Assets/PlayServicesResolver/
+Assets/ProceduralUIImage.meta
+Assets/ProceduralUIImage/

@@ -1,46 +1,11 @@
 {
   "dependencies": {
-    "com.google.android.appbundle": {
-      "version": "1.2.0",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://unityregistry-pa.googleapis.com"
-    },
-    "com.google.external-dependency-manager": {
-      "version": "1.2.159",
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
       "depth": 0,
-      "source": "registry",
+      "source": "git",
       "dependencies": {},
-      "url": "https://unityregistry-pa.googleapis.com"
-    },
-    "com.google.play.common": {
-      "version": "1.2.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.google.android.appbundle": "1.2.0"
-      },
-      "url": "https://unityregistry-pa.googleapis.com"
-    },
-    "com.google.play.core": {
-      "version": "1.2.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.google.android.appbundle": "1.2.0"
-      },
-      "url": "https://unityregistry-pa.googleapis.com"
-    },
-    "com.google.play.review": {
-      "version": "1.2.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.google.play.common": "1.2.0",
-        "com.google.play.core": "1.2.0"
-      },
-      "url": "https://unityregistry-pa.googleapis.com"
+      "hash": "c7eedf85c79e2ce06658c8060ca38a282f2ca7ab"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -55,7 +20,7 @@
       "dependencies": {}
     },
     "com.unity.analytics": {
-      "version": "3.6.11",
+      "version": "3.6.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -80,7 +45,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.11",
+      "version": "2.0.15",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -89,7 +54,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.4",
+      "version": "1.2.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -114,7 +79,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.29",
+      "version": "1.1.31",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -147,7 +112,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "21dcb455c8219abfe0998427a7b217cd199a529f"
+      "hash": "70406ae8769399544c6766da0d78611b54af8930"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
